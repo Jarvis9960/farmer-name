@@ -76,7 +76,7 @@ const HomeScreen = () => {
         document.querySelectorAll(".loader-mask1").forEach((loader) => {
           loader.style.display = "none";
         });
-      }, 2000);
+      }, 1000);
     });
 
     // Cleanup event listeners on component unmount
