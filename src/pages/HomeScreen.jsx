@@ -58,13 +58,37 @@ const HomeScreen = () => {
 
     return () => clearInterval(intervalId);
   }, [activeSlide, slides.length]);
- 
-  
+  // useEffect(() => {
+  //   // Simulate window load event
+  //   window.addEventListener("load", () => {
+  //     document.querySelectorAll(".circle").forEach((circle) => {
+  //       circle.style.display = "none";
+  //     });
+  //     setTimeout(() => {
+  //       document.querySelectorAll(".loader-mask").forEach((loader) => {
+  //         loader.style.display = "none";
+  //       });
+  //     }, 350);
+  //   });
+
+  //   window.addEventListener("load", () => {
+  //     setTimeout(() => {
+  //       document.querySelectorAll(".loader-mask1").forEach((loader) => {
+  //         loader.style.display = "none";
+  //       });
+  //     }, 1000);
+  //   });
+
+  //   // Cleanup event listeners on component unmount
+  //   return () => {
+  //     window.removeEventListener("load", () => {});
+  //   };
+  // }, []);
   return (
     <>
       <div className="site_content">
         {/* <!-- ====================================== Loader Mask ===================================== --> */}
-        <div className="loader-mask1">
+        {/* <div className="loader-mask1">
           <div id="splash-screen-page" className="position-relative">
             <div className="dots_pattern_img1">
               <img className="hekko" src={DotPattern} alt="dots_pattern" />
@@ -82,7 +106,7 @@ const HomeScreen = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <!-- ====================================== Loader Mask End===================================== --> */}
         {/* <!-- ====================================== Slider ===================================== --> */}
         <div className="container">
