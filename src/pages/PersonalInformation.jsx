@@ -60,11 +60,11 @@ const PersonalInformation = () => {
 
     // Simulate loader for 3 seconds
     setTimeout(() => {
-      // setShowLoader(false);
+      setShowLoader(false);
       // Redirect after 2 seconds
       setTimeout(() => {
         window.location.href = "/submit_video_kyc";
-      }, 2000);
+      }, 1000);
     }, 2000);
   };
   return (
