@@ -57,14 +57,14 @@ const PersonalInformation = () => {
 
   const handleContinueClick = () => {
     setShowLoader(true);
+    setShow(true);
 
     // Simulate loader for 3 seconds
     setTimeout(() => {
       setShowLoader(false);
       // Redirect after 2 seconds
-      setTimeout(() => {
-        window.location.href = "/submit_video_kyc";
-      }, 1000);
+
+      window.location.href = "/submit_video_kyc";
     }, 2000);
   };
   return (
@@ -193,7 +193,7 @@ const PersonalInformation = () => {
             </div>
             <div
               className="bottom-fix-btn onboarding-next-btn print-continue-btn"
-              onClick={handleShow}
+              // onClick={handleShow}
               data-bs-toggle="modal"
             >
               <Link
